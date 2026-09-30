@@ -17,10 +17,78 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
+const siteUrl = "https://www.pfhmarkets.com";
+
 export const metadata: Metadata = {
-  title: "PFH Markets | Trade Global Commodities with Confidence",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default:
+      "Commodity Trading | Trade Global Commodity Markets | PFH Markets",
+    template: "%s | PFH Markets",
+  },
   description:
-    "Access global commodity markets through advanced trading technology, professional tools, and a trading environment designed for essential assets.",
+    "Trade commodity CFDs including agricultural, soft, and industrial commodities through PFH Markets. Access advanced trading tools, educational resources, and professional market access.",
+  keywords: [
+    "Commodity Trading",
+    "Commodity CFDs",
+    "Agricultural Commodities",
+    "Industrial Commodities",
+    "Soft Commodities",
+    "Commodity Markets",
+    "Trade Commodities Online",
+    "Commodity Trading Platform",
+    "What is commodity trading?",
+    "How do commodity markets work?",
+    "What affects commodity prices?",
+    "Supply and demand in commodity markets",
+    "Agricultural commodity trading",
+    "Industrial commodity market analysis",
+  ],
+  authors: [{ name: "PFH Markets" }],
+  creator: "PFH Markets",
+  publisher: "PFH Markets",
+  applicationName: "PFH Markets",
+  category: "Finance",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "PFH Markets",
+    title:
+      "Commodity Trading | Trade Global Commodity Markets | PFH Markets",
+    description:
+      "Trade commodity CFDs including agricultural, soft, and industrial commodities through PFH Markets. Access advanced trading tools, educational resources, and professional market access.",
+    images: [
+      {
+        url: "/hero2.png",
+        width: 1200,
+        height: 630,
+        alt: "PFH Markets commodity trading platform",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commodity Trading | Trade Global Commodity Markets | PFH Markets",
+    description:
+      "Trade commodity CFDs including agricultural, soft, and industrial commodities through PFH Markets. Access advanced trading tools, educational resources, and professional market access.",
+    images: ["/hero2.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
