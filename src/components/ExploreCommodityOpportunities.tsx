@@ -51,7 +51,7 @@ export default function ExploreCommodityOpportunities() {
 
           <h2 className="mt-4 font-serif text-[2rem] leading-[1.18] font-semibold tracking-[-0.01em] sm:text-4xl lg:text-[2.75rem]">
             One Market. Essential{" "}
-            <span className="gold-text italic">Global Resources</span>.
+            <span className="gold-text">Global Resources</span>.
           </h2>
 
           <p className="mt-5 text-[15px] leading-relaxed text-white/75 sm:text-base">
